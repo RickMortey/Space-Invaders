@@ -33,6 +33,7 @@ public class MysteryShip : MonoBehaviour
         if (collision.gameObject.layer == LayerMask.NameToLayer("Laser"))
         {
             this.gameObject.SetActive(false);
+            ScoreManager.instance.UpdateScore(400);
         }
     }
 

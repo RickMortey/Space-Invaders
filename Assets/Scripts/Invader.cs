@@ -48,6 +48,7 @@ public class Invader : MonoBehaviour
         {
             this.Killed.Invoke();
             this.gameObject.SetActive(false);
+            ScoreManager.instance.UpdateScore(25);
         }
     }
 }

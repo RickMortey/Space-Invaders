@@ -47,7 +47,7 @@ public class Player : MonoBehaviour
         if (other.gameObject.layer == LayerMask.NameToLayer("Invader") ||
             other.gameObject.layer == LayerMask.NameToLayer("Missile"))
         {
-            SceneManager.LoadScene("YouLost");
+            ScoreManager.instance.UpdateLive();
         }
     }
 }

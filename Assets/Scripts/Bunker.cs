@@ -11,8 +11,7 @@ public class Bunker : MonoBehaviour
         if (other.gameObject.layer == LayerMask.NameToLayer("Invader"))
         {
             this.gameObject.SetActive(false);
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-
+            ScoreManager.instance.KillPlayer();
         }
     }
 }

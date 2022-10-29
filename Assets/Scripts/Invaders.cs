@@ -32,7 +32,7 @@ public class Invaders : MonoBehaviour
 
         if (this.amountKilled >= this.totalInvaders)
         {
-            SceneManager.LoadScene("YouWon");
+            ScoreManager.instance.PlayerWon();
         }
     }
 
